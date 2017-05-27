@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+if [[ "$PATH" != *"/var/vcap/packages/tmux/bin"* ]]; then
+  export PATH="/var/vcap/packages/tmux/bin:$PATH"
+fi
