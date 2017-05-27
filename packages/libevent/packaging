@@ -1,0 +1,12 @@
+set -e
+
+export PREFIX=${BOSH_INSTALL_TARGET}
+
+cd libevent
+tar xzf libevent-2.1.8-stable.tar.gz
+cd libevent-2.1.8-stable
+
+./configure --prefix=${PREFIX}
+make
+make install prefix=${PREFIX}
+

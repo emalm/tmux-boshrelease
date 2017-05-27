@@ -1,0 +1,18 @@
+set -e
+set -x
+
+export PACKAGES="/var/vcap/packages"
+export CFLAGS="-I${PACKAGES}/libevent/include -I${PACKAGES}/ncurses/include -I${PACKAGES}/ncurses/include/ncurses"
+export LDFLAGS="-static -static-libgcc -L${PACKAGES}/libevent/lib -I${PACKAGES}/ncurses/lib"
+
+cd tmux
+tar xzf tmux-2.4.tar.gz
+cd tmux-2.4
+
+./configure --enable-static CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
+CPPFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}" make
+
+BIN_DIR=${BOSH_INSTALL_TARGET}/bin
+mkdir -p ${BIN_DIR}
+cp tmux ${BIN_DIR}
+

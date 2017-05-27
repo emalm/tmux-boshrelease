@@ -1,0 +1,12 @@
+set -e
+
+export PREFIX=${BOSH_INSTALL_TARGET}
+
+cd ncurses
+tar xzf ncurses-5.9.tar.gz
+cd ncurses-5.9
+
+./configure --prefix=${PREFIX}
+make
+make install prefix=${PREFIX}
+

@@ -1,0 +1,10 @@
+---
+name: tmux
+
+dependencies:
+- libevent
+- ncurses
+
+files:
+- tmux/tmux-2.4.tar.gz
+
