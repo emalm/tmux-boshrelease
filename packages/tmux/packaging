@@ -6,8 +6,8 @@ export CFLAGS="-I${PACKAGES}/libevent/include -I${PACKAGES}/ncurses/include -I${
 export LDFLAGS="-static -static-libgcc -L${PACKAGES}/libevent/lib -I${PACKAGES}/ncurses/lib"
 
 cd tmux
-tar xzf tmux-2.4.tar.gz
-cd tmux-2.4
+tar xzf tmux-2.5.tar.gz
+cd tmux-2.5
 
 ./configure --enable-static CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
 CPPFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}" make

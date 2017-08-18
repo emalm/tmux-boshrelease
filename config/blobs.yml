@@ -6,7 +6,7 @@ ncurses/ncurses-5.9.tar.gz:
   size: 2826473
   object_id: fe2ed721-4cb2-4033-4bfd-1ed6a2b70bb2
   sha: 3e042e5f2c7223bffdaac9646a533b8c758b65b5
-tmux/tmux-2.4.tar.gz:
-  size: 470549
-  object_id: 05414b1a-f765-4e2f-4774-00b9b10fd05f
-  sha: ca44777b67267ad22d87bea00086926d26fa45eb
+tmux/tmux-2.5.tar.gz:
+  size: 475717
+  object_id: 29f6ac9c-cc5f-405a-78e5-e594118722c6
+  sha: 245766fc2830e7066ac153d147d403f8b92d8266

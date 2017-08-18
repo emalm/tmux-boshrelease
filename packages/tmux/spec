@@ -6,5 +6,5 @@ dependencies:
 - ncurses
 
 files:
-- tmux/tmux-2.4.tar.gz
+- tmux/tmux-2.5.tar.gz
 
