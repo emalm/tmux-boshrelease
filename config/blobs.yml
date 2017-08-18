@@ -2,10 +2,10 @@ libevent/libevent-2.1.8-stable.tar.gz:
   size: 1026485
   object_id: 70bc24c7-d4dd-4e00-7e46-e883bc5be381
   sha: 2a1b8bb7a262d3fd0ed6a080a20991a6eed675ec
-ncurses/ncurses-5.9.tar.gz:
-  size: 2826473
-  object_id: fe2ed721-4cb2-4033-4bfd-1ed6a2b70bb2
-  sha: 3e042e5f2c7223bffdaac9646a533b8c758b65b5
+ncurses/ncurses-6.0.tar.gz:
+  size: 3131891
+  object_id: da3e94cc-5041-4f01-5ddd-051b590a0096
+  sha: acd606135a5124905da770803c05f1f20dd3b21c
 tmux/tmux-2.5.tar.gz:
   size: 475717
   object_id: 29f6ac9c-cc5f-405a-78e5-e594118722c6
