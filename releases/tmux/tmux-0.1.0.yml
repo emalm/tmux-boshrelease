@@ -1,0 +1,31 @@
+name: tmux
+version: 0.1.0
+commit_hash: bd6a880
+uncommitted_changes: false
+jobs:
+- name: tmux
+  version: 61dc7b11873d22b4f6842fc346dbb318600c66cf
+  fingerprint: 61dc7b11873d22b4f6842fc346dbb318600c66cf
+  sha1: 7225ba6b0ad35e51b3f88f62ffa5a094c9700f8b
+packages:
+- name: libevent
+  version: fe6b8bc66e5076cb264c9abcf5c5bb1adfaa177b
+  fingerprint: fe6b8bc66e5076cb264c9abcf5c5bb1adfaa177b
+  sha1: af55d94ba584e604ffb0bcce42168bba4f44109a
+  dependencies: []
+- name: ncurses
+  version: 38e94fd99558824f904541882bdfa22eb1b07413
+  fingerprint: 38e94fd99558824f904541882bdfa22eb1b07413
+  sha1: 46e2c260ef049c60017c0e1ed8d9ca080bef49b4
+  dependencies: []
+- name: tmux
+  version: 9bfededbe30515b05efca71062a0a75570744b93
+  fingerprint: 9bfededbe30515b05efca71062a0a75570744b93
+  sha1: 90afacd30defdf8700e69c5e1f278b5e085cb8d2
+  dependencies:
+  - libevent
+  - ncurses
+license:
+  version: 9a8439075f7924583618645bb37899d25c7f7df1
+  fingerprint: 9a8439075f7924583618645bb37899d25c7f7df1
+  sha1: f7c91e6d64b9cb0e2b340f0e0ea5fd6ac53877c4
