@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cp /var/vcap/jobs/tmux/env /etc/profile.d/tmux-env.sh
+

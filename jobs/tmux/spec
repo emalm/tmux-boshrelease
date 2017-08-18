@@ -2,8 +2,8 @@
 name: tmux
 
 templates:
-  pre-start.erb: bin/pre-start
-  setup.erb: bin/setup
+  bin/pre-start: bin/pre-start
+  env: env
 
 packages:
 - libevent
