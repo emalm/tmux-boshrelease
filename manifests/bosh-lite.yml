@@ -1,0 +1,33 @@
+# This manifest assumes a cloud-config similar to
+# https://github.com/cloudfoundry/cf-deployment/blob/master/bosh-lite/cloud-config.yml
+# has been applied to the BOSH-Lite BOSH Director.
+
+---
+instance_groups:
+- azs:
+  - z1
+  - z2
+  - z3
+  instances: 1
+  jobs:
+  - name: tmux
+    release: tmux
+  name: tmux
+  networks:
+  - name: default
+  stemcell: default
+  vm_type: default
+name: tmux
+properties: {}
+releases:
+- name: tmux
+  version: latest
+stemcells:
+- alias: default
+  os: ubuntu-trusty
+  version: latest
+update:
+  canaries: 0
+  canary_watch_time: 30000
+  max_in_flight: 1
+  update_watch_time: 30000
