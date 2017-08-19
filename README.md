@@ -10,7 +10,7 @@ This manifest assumes the BOSH-Lite BOSH director has a cloud-config similar to 
 To upload the release and deploy, follow these steps using the [BOSH CLI](https://github.com/cloudfoundry/bosh-cli), assuming the BOSH-Lite director is aliased to `lite`:
 
 ```
-$ bosh -e lite upload-release releases/tmux/tmux-v0.1.0.yml
+$ bosh -e lite upload-release releases/tmux/tmux-0.2.0.yml
 $ bosh -e lite -d tmux deploy manifests/bosh-lite.yml
 ```
 
